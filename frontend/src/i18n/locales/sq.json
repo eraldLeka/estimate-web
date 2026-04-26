@@ -1,0 +1,205 @@
+{
+  "app": {
+    "name": "Preventiv"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Produktet",
+    "preventives": "Preventivat",
+    "newPreventive": "Preventiv i Ri",
+    "settings": "Cilësimet"
+  },
+  "actions": {
+    "logout": "Dilni",
+    "back": "Kthehu",
+    "delete": "Fshij",
+    "edit": "Ndrysho",
+    "downloadPdf": "Shkarko PDF",
+    "viewPdf": "Shiko PDF",
+    "save": "Ruaj",
+    "cancel": "Anulo",
+    "create": "Krijo",
+    "loading": "Duke ngarkuar...",
+    "saving": "Duke ruajtur...",
+    "creating": "Duke krijuar..."
+  },
+  "auth": {
+    "subtitle": "Hyrje në panel",
+    "username": "Përdoruesi",
+    "password": "Fjalëkalimi",
+    "submit": "Hyrja",
+    "submitting": "Duke hyrë...",
+    "invalidCredentials": "Kredenciale të gabuara"
+  },
+  "dashboard": {
+    "system": "Sistem Preventivash",
+    "greeting": {
+      "morning": "Mirëmëngjes",
+      "midday": "Mirëdita",
+      "night": "Mirëmbrëma"
+    },
+    "newPreventive": "Preventiv i Ri",
+    "stats": {
+      "totalPreventives": "Gjithsej Preventiva",
+      "totalValue": "Vlera Totale"
+    },
+    "recent": {
+      "title": "Preventivat e Fundit",
+      "last5": "5 të fundit",
+      "clientDate": "Klienti / Data",
+      "amount": "Shuma",
+      "empty": "Nuk ka preventiva akoma"
+    }
+  },
+  "products": {
+    "breadcrumb": "Katalogu",
+    "title": "Produktet",
+    "addProduct": "Shto Produkt",
+    "form": {
+      "editTitle": "Ndrysho Produktin",
+      "newTitle": "Produkt i Ri",
+      "uploadPhoto": "Ngarko foto",
+      "addPhoto": "Shto foto",
+      "name": "Emërtimi",
+      "namePlaceholder": "p.sh. Kamera IR",
+      "price": "Çmimi (€)"
+    },
+    "empty": {
+      "title": "Nuk ka produkte",
+      "subtitle": "Shto produktin e parë me butonin lart"
+    },
+    "toast": {
+      "updated": "Produkti u përditësua",
+      "added": "Produkti u shtua",
+      "saveError": "Gabim gjatë ruajtjes",
+      "deleted": "Produkti u fshi",
+      "photoUploaded": "Foto u ngarkua"
+    }
+  },
+  "sort": {
+    "label": "Rendit sipas",
+    "priceAsc": "Çmimi: Më i liri → Më i shtrenjti",
+    "priceDesc": "Çmimi: Më i shtrenjti → Më i liri",
+    "nameAsc": "Emri: A → Z",
+    "nameDesc": "Emri: Z → A",
+    "dateNewest": "Data: Më e reja",
+    "dateOldest": "Data: Më e vjetra",
+    "clientAsc": "Klienti: A → Z",
+    "clientDesc": "Klienti: Z → A",
+    "totalLow": "Totali: Më i ulët",
+    "totalHigh": "Totali: Më i lartë"
+  },
+  "newPreventive": {
+    "breadcrumb": {
+      "root": "Preventiva",
+      "create": "Krijim"
+    },
+    "title": "Preventiv i Ri",
+    "submit": "Krijo Preventivin",
+    "clientName": "Emri i Klientit",
+    "clientNamePlaceholder": "p.sh. Kompania ABC",
+    "selectedItems": "Artikujt e Zgjedhur",
+    "table": {
+      "photo": "Foto",
+      "name": "Emërtimi",
+      "quantity": "Sasia",
+      "price": "Çmimi",
+      "value": "Vlera",
+      "remove": "Hiq artikullin"
+    },
+    "total": "Totali",
+    "empty": {
+      "title": "Nuk ka artikuj të zgjedhur",
+      "subtitle": "Shto produkte nga lista në të djathtë"
+    },
+    "sidebar": {
+      "title": "Produkte"
+    },
+    "toast": {
+      "created": "Preventivi u krijua me sukses",
+      "createError": "Gabim gjatë krijimit të preventivit",
+      "alreadyAdded": "Ky produkt është shtuar tashmë",
+      "missingClient": "Shkruaj emrin e klientit",
+      "missingItems": "Shto të paktën një produkt"
+    }
+  },
+  "preventiveDetail": {
+    "toast": {
+      "deleted": "Preventivi u fshi",
+      "exportError": "Gabim gjatë eksportit"
+    },
+    "loading": "Duke ngarkuar...",
+    "notFound": "Preventivi nuk u gjet",
+    "document": {
+      "badge": "DOKUMENT ZYRTAR",
+      "titleLabel": "Preventiv",
+      "title": "Preventiv #{{id}}",
+      "issueDate": "Data e lëshimit: {{date}}",
+      "grandTotal": "TOTALI I PËRGJITHSHËM",
+      "forClient": "PËR KLIENTIN",
+      "issuedBy": "LËSHUAR NGA",
+      "table": {
+        "product": "PRODUKTI",
+        "quantity": "SASIA",
+        "price": "ÇMIMI",
+        "total": "TOTALI"
+      },
+      "subtotal": "Nëntotali:",
+      "total": "TOTAL:"
+    }
+  },
+  "preventivesList": {
+    "toast": {
+      "deleted": "Preventivi u fshi",
+      "deleteError": "Gabim gjatë fshirjes",
+      "openPdfError": "Gabim gjatë hapjes së PDF"
+    },
+    "header": {
+      "eyebrow": "Dokumentet",
+      "title": "Lista e Preventivave",
+      "count": "{{count}} preventiva"
+    },
+    "searchPlaceholder": "Kërko klient...",
+    "empty": {
+      "noResults": "Nuk u gjet asnjë rezultat për \"{{search}}\"",
+      "tryAnother": "Provo një kërkim tjetër",
+      "none": "Nuk ka preventiva",
+      "createFirst": "Krijo preventivën e parë"
+    },
+    "table": {
+      "number": "Numri",
+      "client": "Klienti",
+      "date": "Data",
+      "total": "Totali",
+      "actions": "Veprime",
+      "deleteTitle": "Fshi preventivin"
+    }
+  },
+  "settings": {
+    "toast": {
+      "saved": "Të dhënat u ruajtën"
+    },
+    "breadcrumb": "Sistemi",
+    "title": "Cilësimet e Shitësit",
+    "sections": {
+      "identity": "Identiteti",
+      "contactAddress": "Kontakti & Adresa"
+    },
+    "fields": {
+      "sellerName": "Emri i shitësit",
+      "fixed": "Fiks",
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Adresa",
+      "saveChanges": "Ruaj ndryshimet"
+    },
+    "preview": {
+      "title": "Pamja në PDF",
+      "name": "Emri",
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Adresa",
+      "notSet": "nuk është vendosur"
+    }
+  }
+}

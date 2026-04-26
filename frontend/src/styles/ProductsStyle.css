@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── ROOT ── */
+.pr-root {
+  width: 100%;
+  font-family: 'Sora', sans-serif;
+  color: #0f1c3f;
+}
+
+/* ── PAGE HEADER ── */
+.pr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.pr-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pr-header-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e4fd8 0%, #2563eb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  flex-shrink: 0;
+}
+
+.pr-breadcrumb {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7db3;
+  margin: 0 0 3px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.pr-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d1b40;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+
+/* ── ADD BUTTON ── */
+.pr-btn-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 22px;
+  background: linear-gradient(135deg, #1e4fd8 0%, #2563eb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Sora', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.pr-btn-add:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.38);
+}
+
+.pr-btn-add:active {
+  transform: translateY(0);
+}
+
+/* ── FORM CARD ── */
+.pr-form-card {
+  background: #ffffff;
+  border: 1px solid #dce5f7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(14, 30, 80, 0.06);
+  margin-bottom: 24px;
+  animation: prFadeSlide 0.22s ease both;
+}
+
+@keyframes prFadeSlide {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.pr-form-header {
+  padding: 13px 22px;
+  background: #f5f8ff;
+  border-bottom: 1.5px solid #1e4fd8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pr-form-header-icon {
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+}
+
+.pr-form-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1e4fd8;
+  margin: 0;
+}
+
+.pr-form-body {
+  padding: 20px 22px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+/* ── IMAGE PICKER ── */
+.pr-img-picker-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.pr-img-picker {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  border: 1.5px dashed #c5d2f0;
+  background: #f5f8ff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.18s, background 0.18s;
+}
+
+.pr-img-picker:hover {
+  border-color: #2563eb;
+  background: #eef3ff;
+}
+
+.pr-img-picker:hover .pr-img-picker-overlay {
+  opacity: 1;
+}
+
+.pr-img-picker-empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #93a8d4;
+  font-family: 'Sora', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.pr-img-picker-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pr-img-picker-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 79, 216, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.18s;
+  border-radius: 10px;
+}
+
+.pr-img-picker-remove {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #dc2626;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background 0.15s, transform 0.15s;
+}
+
+.pr-img-picker-remove:hover {
+  background: #b91c1c;
+  transform: scale(1.1);
+}
+
+/* ── FIELDS COLUMN ── */
+.pr-form-fields {
+  flex: 1;
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.pr-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 2;
+  min-width: 200px;
+}
+
+.pr-form-field--sm {
+  flex: 1;
+  min-width: 130px;
+}
+
+.pr-form-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7db3;
+}
+
+.pr-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pr-input-icon {
+  position: absolute;
+  left: 12px;
+  color: #93a8d4;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.pr-input {
+  width: 100%;
+  padding: 11px 14px 11px 36px;
+  border-radius: 10px;
+  border: 1.5px solid #d0daf0;
+  background: #f7f9ff;
+  color: #0d1b40;
+  font-family: 'Sora', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+}
+
+.pr-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.11);
+  background: #fff;
+}
+
+.pr-input::placeholder {
+  color: #a8b4d4;
+  font-weight: 400;
+}
+
+/* ── FORM ACTIONS ── */
+.pr-form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 1px;
+}
+
+.pr-btn-save {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 22px;
+  background: linear-gradient(135deg, #1e4fd8 0%, #2563eb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Sora', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.28);
+  transition: transform 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
+}
+
+.pr-btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(37, 99, 235, 0.36);
+}
+
+.pr-btn-cancel {
+  padding: 11px 18px;
+  background: transparent;
+  color: #6b7db3;
+  border: 1.5px solid #d0daf0;
+  border-radius: 10px;
+  font-family: 'Sora', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+
+.pr-btn-cancel:hover {
+  border-color: #93a8d4;
+  color: #1a2d5a;
+  background: #f5f8ff;
+}
+
+/* ── GRID ── */
+.pr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+/* ── PRODUCT CARD ── */
+.pr-card {
+  background: #ffffff;
+  border: 1px solid #dce5f7;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(14, 30, 80, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  animation: prCardIn 0.28s ease both;
+}
+
+.pr-card:hover {
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+  transform: translateY(-2px);
+  border-color: #b8cafc;
+}
+
+@keyframes prCardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── IMAGE AREA ── */
+.pr-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #eef2ff 0%, #e8eeff 100%);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pr-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pr-card:hover .pr-img {
+  transform: scale(1.04);
+}
+
+.pr-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b8cafc;
+}
+
+.pr-img-upload {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(13, 27, 64, 0.72);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+  font-family: 'Sora', sans-serif;
+}
+
+.pr-img-upload:hover {
+  background: rgba(37, 99, 235, 0.85);
+}
+
+/* ── CARD BODY ── */
+.pr-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.pr-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d1b40;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pr-card-price {
+  font-family: 'DM Mono', monospace;
+  font-size: 17px;
+  font-weight: 500;
+  color: #2563eb;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+/* ── CARD ACTIONS ── */
+.pr-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #eef2fc;
+}
+
+.pr-btn-edit {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 0;
+  background: #f5f8ff;
+  border: 1.5px solid #dce5f7;
+  border-radius: 8px;
+  font-family: 'Sora', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3a5bbf;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pr-btn-edit:hover {
+  background: #eef3ff;
+  border-color: #93b4f8;
+  color: #1e4fd8;
+}
+
+.pr-btn-delete {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 0;
+  background: #fff7f7;
+  border: 1.5px solid #fde8e8;
+  border-radius: 8px;
+  font-family: 'Sora', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c94040;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pr-btn-delete:hover {
+  background: #fff0f0;
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+/* ── EMPTY STATE ── */
+.pr-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 56px 24px;
+  background: #fff;
+  border: 1.5px dashed #c5d2f0;
+  border-radius: 16px;
+}
+
+.pr-empty-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  color: #6b7db3;
+}
+
+.pr-empty-text {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3a4e80;
+}
+
+.pr-empty-sub {
+  margin: 0;
+  font-size: 12.5px;
+  color: #8fa0c8;
+}

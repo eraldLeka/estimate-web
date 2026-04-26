@@ -1,0 +1,205 @@
+{
+  "app": {
+    "name": "Preventiv"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "preventives": "Estimates",
+    "newPreventive": "New estimate",
+    "settings": "Settings"
+  },
+  "actions": {
+    "logout": "Log out",
+    "back": "Back",
+    "delete": "Delete",
+    "edit": "Edit",
+    "downloadPdf": "Download PDF",
+    "viewPdf": "View PDF",
+    "save": "Save",
+    "cancel": "Cancel",
+    "create": "Create",
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "creating": "Creating..."
+  },
+  "auth": {
+    "subtitle": "Sign in",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "invalidCredentials": "Invalid credentials"
+  },
+  "dashboard": {
+    "system": "Estimates system",
+    "greeting": {
+      "morning": "Good morning",
+      "midday": "Good afternoon",
+      "night": "Good evening"
+    },
+    "newPreventive": "New estimate",
+    "stats": {
+      "totalPreventives": "Total estimates",
+      "totalValue": "Total value"
+    },
+    "recent": {
+      "title": "Recent estimates",
+      "last5": "Last 5",
+      "clientDate": "Client / Date",
+      "amount": "Amount",
+      "empty": "No estimates yet"
+    }
+  },
+  "products": {
+    "breadcrumb": "Catalog",
+    "title": "Products",
+    "addProduct": "Add product",
+    "form": {
+      "editTitle": "Edit product",
+      "newTitle": "New product",
+      "uploadPhoto": "Upload photo",
+      "addPhoto": "Add photo",
+      "name": "Name",
+      "namePlaceholder": "e.g. IR camera",
+      "price": "Price (€)"
+    },
+    "empty": {
+      "title": "No products",
+      "subtitle": "Add your first product using the button above"
+    },
+    "toast": {
+      "updated": "Product updated",
+      "added": "Product added",
+      "saveError": "Error while saving",
+      "deleted": "Product deleted",
+      "photoUploaded": "Photo uploaded"
+    }
+  },
+  "sort": {
+    "label": "Sort by",
+    "priceAsc": "Price: Low → High",
+    "priceDesc": "Price: High → Low",
+    "nameAsc": "Name: A → Z",
+    "nameDesc": "Name: Z → A",
+    "dateNewest": "Date: Newest",
+    "dateOldest": "Date: Oldest",
+    "clientAsc": "Client: A → Z",
+    "clientDesc": "Client: Z → A",
+    "totalLow": "Total: Lowest",
+    "totalHigh": "Total: Highest"
+  },
+  "newPreventive": {
+    "breadcrumb": {
+      "root": "Estimates",
+      "create": "Create"
+    },
+    "title": "New estimate",
+    "submit": "Create estimate",
+    "clientName": "Client name",
+    "clientNamePlaceholder": "e.g. ABC Company",
+    "selectedItems": "Selected items",
+    "table": {
+      "photo": "Photo",
+      "name": "Name",
+      "quantity": "Qty",
+      "price": "Price",
+      "value": "Total",
+      "remove": "Remove item"
+    },
+    "total": "Total",
+    "empty": {
+      "title": "No items selected",
+      "subtitle": "Add products from the list on the right"
+    },
+    "sidebar": {
+      "title": "Products"
+    },
+    "toast": {
+      "created": "Estimate created successfully",
+      "createError": "Error creating estimate",
+      "alreadyAdded": "This product has already been added",
+      "missingClient": "Enter client name",
+      "missingItems": "Add at least one product"
+    }
+  },
+  "preventiveDetail": {
+    "toast": {
+      "deleted": "Estimate deleted",
+      "exportError": "Export failed"
+    },
+    "loading": "Loading...",
+    "notFound": "Estimate not found",
+    "document": {
+      "badge": "OFFICIAL DOCUMENT",
+      "titleLabel": "Estimate",
+      "title": "Estimate #{{id}}",
+      "issueDate": "Issue date: {{date}}",
+      "grandTotal": "GRAND TOTAL",
+      "forClient": "BILLED TO",
+      "issuedBy": "ISSUED BY",
+      "table": {
+        "product": "PRODUCT",
+        "quantity": "QTY",
+        "price": "PRICE",
+        "total": "TOTAL"
+      },
+      "subtotal": "Subtotal:",
+      "total": "TOTAL:"
+    }
+  },
+  "preventivesList": {
+    "toast": {
+      "deleted": "Estimate deleted",
+      "deleteError": "Delete failed",
+      "openPdfError": "Failed to open PDF"
+    },
+    "header": {
+      "eyebrow": "Documents",
+      "title": "Estimates list",
+      "count": "{{count}} estimates"
+    },
+    "searchPlaceholder": "Search client...",
+    "empty": {
+      "noResults": "No results for \"{{search}}\"",
+      "tryAnother": "Try another search",
+      "none": "No estimates",
+      "createFirst": "Create your first estimate"
+    },
+    "table": {
+      "number": "Number",
+      "client": "Client",
+      "date": "Date",
+      "total": "Total",
+      "actions": "Actions",
+      "deleteTitle": "Delete estimate"
+    }
+  },
+  "settings": {
+    "toast": {
+      "saved": "Saved"
+    },
+    "breadcrumb": "System",
+    "title": "Seller settings",
+    "sections": {
+      "identity": "Identity",
+      "contactAddress": "Contact & Address"
+    },
+    "fields": {
+      "sellerName": "Seller name",
+      "fixed": "Fixed",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "saveChanges": "Save changes"
+    },
+    "preview": {
+      "title": "PDF preview",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "notSet": "not set"
+    }
+  }
+}
